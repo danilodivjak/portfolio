@@ -216,6 +216,62 @@ body{
                 font-size: 2rem;
             }
         }
+        .contact-form{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #c5c5c5;
+            margin: 8% auto;
+            width: 50%;
+            form{
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                align-items:center;
+                margin: 10% auto;
+                width: 80%;
+                gap: 30px;
+
+                label{
+                    display: flex;
+                    flex-direction: row;
+                    align-items:center;
+                    justify-content: center;
+                    font-size: 2rem;
+
+                    input{
+                        width: 50%;
+                        height: 30px;
+                        margin-left: 20px;
+                    }
+
+                    textarea{
+                        margin-left: 20px;
+                        max-width: 300px;
+                        min-height: 30px;
+                    }
+                }
+                .form-btn{
+                    button{
+                        background-color: #33BAC7;
+                        padding: 5px 20px;
+                        font-size: 1.5rem;
+                        border:none;
+                        border-radius: 10px;
+                        color:black;
+                        font-family: "Oswald", sans-serif;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        transition: transform 0.3s ease;
+
+                        &:hover{
+                            background-color: black;
+                            color:#33BAC7;
+                            animation: btnHover 0.5s ease forwards;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -249,6 +305,18 @@ body{
                         margin: 5% 0;
                     }
                 }
+            }
+        }
+    }
+
+    .contact{
+        .contact-content{
+            .contact-form{
+                display: flex;
+                flex-direction: column;
+                border: 1px solid #c5c5c5;
+                margin: 8% auto;
+                width: 75%;
             }
         }
     }
@@ -342,6 +410,16 @@ body{
                 flex-direction: column;
                 gap: 25px;
             }
+            .contact-form{
+                width: 100%;
+                
+                form{
+                    width: 90%;
+                    label{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
         }
     }
 }
@@ -420,6 +498,14 @@ body{
         .contact-content{
             .contact-me{
                 margin: 10% 0;
+            }
+
+            .contact-form{
+                form{
+                    label{
+                        font-size: 1.1rem;
+                    }
+                }
             }
         }
     }

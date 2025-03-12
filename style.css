@@ -203,6 +203,56 @@ body {
 .contact .contact-content .contact-me p {
   font-size: 2rem;
 }
+.contact .contact-content .contact-form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c5c5c5;
+  margin: 8% auto;
+  width: 50%;
+}
+.contact .contact-content .contact-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10% auto;
+  width: 80%;
+  gap: 30px;
+}
+.contact .contact-content .contact-form form label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+.contact .contact-content .contact-form form label input {
+  width: 50%;
+  height: 30px;
+  margin-left: 20px;
+}
+.contact .contact-content .contact-form form label textarea {
+  margin-left: 20px;
+  max-width: 300px;
+  min-height: 30px;
+}
+.contact .contact-content .contact-form form .form-btn button {
+  background-color: #33BAC7;
+  padding: 5px 20px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.contact .contact-content .contact-form form .form-btn button:hover {
+  background-color: black;
+  color: #33BAC7;
+  animation: btnHover 0.5s ease forwards;
+}
 
 .contact-me-item {
   display: flex;
@@ -227,6 +277,13 @@ body {
   .hero .hero-content .hero-left .hero-leftContent p {
     font-size: 1.5rem;
     margin: 5% 0;
+  }
+  .contact .contact-content .contact-form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #c5c5c5;
+    margin: 8% auto;
+    width: 75%;
   }
 }
 @media (max-width: 1000px) {
@@ -293,6 +350,15 @@ body {
     flex-direction: column;
     gap: 25px;
   }
+  .contact .contact-content .contact-form {
+    width: 100%;
+  }
+  .contact .contact-content .contact-form form {
+    width: 90%;
+  }
+  .contact .contact-content .contact-form form label {
+    font-size: 1.4rem;
+  }
 }
 @media (max-width: 430px) {
   .header .header-content .name h2 {
@@ -349,5 +415,8 @@ body {
   }
   .contact .contact-content .contact-me {
     margin: 10% 0;
+  }
+  .contact .contact-content .contact-form form label {
+    font-size: 1.1rem;
   }
 }/*# sourceMappingURL=style.css.map */
